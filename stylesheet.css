@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #6610f2;
+    --background-color: #FAFAFA;
+    --background-text-color: #FFFFFF;
+    --primary-text-color: #212529;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media all and (max-width: 750px) {
+    .projects {
+        width: 80vw;
+    }
+
+    .name {
+        margin-top: 60vw;
+    }
+}
+
+@media all and (min-width: 751px) {
+    .projects {
+        width: 40vw;
+    }
+
+    .name {
+        margin-top: 15vw;
+    }
+}
+
+.zv-h1 {
+    color: var(--primary-text-color);
+    font-size: calc(24px + 3vw);
+    font-weight: 500;
+}
+
+.zv-h2 {
+    color: var(--primary-text-color);
+    font-size: calc(16px + 1vw);
+    font-weight: 300;
+}
+
+.zv-p {
+    color: var(--primary-text-color);
+    font-size: calc(16px + 0.5vw);
+    font-weight: 300;
+}
+
+.zv-p2 {
+    color: var(--primary-text-color);
+    font-size: calc(12px + 0.4vw);
+    font-weight: 300;
+}
+
+.zv-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.zv-link:hover {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}

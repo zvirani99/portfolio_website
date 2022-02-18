@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" style="height:100%; ">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Zeeshan Virani</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+
+  <body style="margin-left: 10vw; margin-right: 10vw;">
+
+      <p class="name zv-h1" style="margin-bottom: 0vw;" >Zeeshan Virani</p>
+      
+      <p class="zv-h2" style="margin-top: 1vw; margin-bottom: 0.5vw;" >Computer Engineering Senior at Texas A&M University</p>
+
+      <a class="zv-link zv-h2" href="projects.html" style="margin-right: 1rem;">Projects</a>
+      <a class="zv-link zv-h2" href="zv_resume.pdf">Resume</a>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script>
+      var textWrapper = document.querySelector('.zv-h1');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+      anime.timeline({loop: false})
+        .add({
+          targets: '.zv-h1 .letter',
+          translateX: [40,0],
+          translateZ: 0,
+          opacity: [0,1],
+          easing: "easeOutExpo",
+          duration: 1200,
+          delay: (el, i) => 500 + 30 * i
+        });
+
+      anime.timeline({loop: false})
+        .add({
+          targets: '.zv-h2',
+          opacity: [0,1],
+          easing: "easeOutExpo",
+          duration: 1200,
+          delay: 1200
+        });
+    </script>
+  </body>
+</html>
